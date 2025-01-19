@@ -2,16 +2,17 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #f4f4f4;
+  max-width: 100%;
 }
 
-/* Add a black background color to the top navigation */
+
 .topnav {
   position: relative;
   background-color: #333;
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -21,18 +22,18 @@ body {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Add a color to the active/current link */
+
 .topnav a.active {
   color: white;
 }
 
-/* Centered section inside the top navigation */
+
 .topnav-centered a {
   float: none;
   position: absolute;
@@ -41,18 +42,18 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* Right-aligned section inside the top navigation */
+
 .topnav-right {
   float: right;
   display: block;
 }
 
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+
 @media screen and (max-width: 600px) {
   .topnav a, .topnav-right {
       float: none;
       display: block;
-      width: 100%;  /* Linklerin tüm genişliği kaplamasını sağlıyoruz */
+      width: 100%;  
       text-align: left;
   }
 
@@ -64,13 +65,13 @@ body {
   }
 
   .topnav a {
-      padding: 10px 15px;  /* Daha küçük butonlar için padding ayarı */
-      font-size: 14px;  /* Mobil cihazlarda yazı boyutunu küçültüyoruz */
+      padding: 10px 15px;  
+      font-size: 14px; 
   }
 
-  /* Logo mobilde biraz küçülsün */
+ 
   .logo img {
-      width: 80px;  /* Logo genişliği ayarlandı */
+      width: 80px;  
   }
 }
 
@@ -79,23 +80,23 @@ h1 {
   margin-left: 400px;
 }
 
-/* Container bloğunu ortalamak için */
+
 .container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-/* Content Block */
+
 .content-block {
   background-color: white;
   padding: 20px;
-  width: 60%; /* Genişliği ayarlayabilirsiniz */
-  border-left: 5px solid #333;  /* Sol kenarlık */
-  border-right: 5px solid #333; /* Sağ kenarlık */
+  width: 60%; 
+  border-left: 5px solid #333; 
+  border-right: 5px solid #333; 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
-  margin: 20px auto; /* İçeriğin ortalanması */
+  margin: 20px auto; 
 }
 
 .content-block h2 {
@@ -140,7 +141,7 @@ a:hover {
   justify-content: right;
 }
 
-/* Sağ tarafta ikonlar */
+
 .navbar .right {
   float: right;
 }
@@ -158,53 +159,53 @@ a:hover {
   color: black;
 }
 
-/* İkon stil ayarları */
+
 .navbar .right a i {
   font-size: 18px;
 }
 
-/* **Responsive Tasarım** - Mobil cihazlar için stil değişiklikleri */
+
 @media screen and (max-width: 768px) {
   .container {
-      width: 90%;  /* Daha dar ekranlarda container'ı %90 yapmak */
+      width: 90%;  
   }
 
   .content-block {
-      width: 100%;  /* İçeriği %100 genişliğe ayarlıyoruz */
-      border-left: none;  /* Kenarlıkları kaldırıyoruz */
-      border-right: none;  /* Kenarlıkları kaldırıyoruz */
-      box-shadow: none;  /* Daha basit bir tasarım için gölgelendirmeyi kaldırıyoruz */
+      width: 100%; 
+      border-left: none; 
+      border-right: none; 
+      box-shadow: none; 
   }
 
   .content-block h2 {
-      font-size: 1.5em;  /* Başlıkları küçültüyoruz */
+      font-size: 1.5em;  
   }
 
   .button {
-      width: 100%;  /* Butonun genişliğini %100 yapıyoruz */
-      float: none;  /* Butonu sola kaydırıyoruz */
-      text-align: center;  /* Butonu ortalıyoruz */
-      padding: 12px;  /* Butonun yüksekliğini biraz arttırıyoruz */
+      width: 100%;  
+      float: none;  
+      text-align: center;  
+      padding: 12px; 
   }
 
   .topnav a {
-      font-size: 16px;  /* Linkleri biraz daha küçük yapıyoruz */
-      padding: 12px;  /* Linklerin boyutlarını biraz küçültüyoruz */
+      font-size: 16px; 
+      padding: 12px; 
   }
 
-  /* Logo'nun mobil görünümde biraz daha küçük olmasını sağlıyoruz */
+  
   .logo img {
       width: 60px;
   }
 
-  /* Sağdaki sosyal medya ikonlarını tek satırda göstermek yerine alt alta sıralıyoruz */
+
   .topnav-right a {
       display: block;
       padding: 10px;
   }
 }
 
-/* **Daha küçük ekranlar için** - Mobil telefonlar */
+
 @media screen and (max-width: 480px) {
   .content-block {
       padding: 15px;
@@ -215,26 +216,26 @@ a:hover {
   }
 
   .button {
-      font-size: 14px;  /* Buton metnini küçük yapıyoruz */
+      font-size: 14px;  
       padding: 10px 20px;
   }
 
   .topnav a {
       padding: 10px 12px;
-      font-size: 14px;  /* Ekran küçük olduğunda metni küçültüyoruz */
+      font-size: 14px; 
   }
 
   .topnav a, .topnav-right a {
       padding: 10px;
-      font-size: 14px;  /* Link boyutlarını küçük yapıyoruz */
+      font-size: 14px;  
   }
 
   .social {
       display: flex;
-      justify-content: center;  /* Sosyal medya ikonlarını ortalıyoruz */
+      justify-content: center;  
   }
 
   .logo {
-      justify-content: center;  /* Logo'nun ortalanmasını sağlıyoruz */
+      justify-content: center; 
   }
 }
